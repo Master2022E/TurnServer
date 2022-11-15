@@ -5,7 +5,7 @@ all: run
 logs:
 	docker logs $(CONTAINER_NAME) -f -n 100
 
-run: build
+run:
 	docker run -d --network=host -v $(pwd)/my.conf:/etc/coturn/turnserver.conf --name $(CONTAINER_NAME) coturn/coturn
 
 stop:
