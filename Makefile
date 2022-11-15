@@ -1,4 +1,4 @@
-CONTAINER_NAME=signal-server
+CONTAINER_NAME=turn-server
 
 all: run
 
